@@ -7,7 +7,7 @@ Cloud Run for Anthos と Cloud Run (fully managed) の違いを簡単にまと�
 | :--- | :--- | :--- |
 | 実行環境 |	Google Cloudのサーバーレス環境 |	Anthos GKEクラスタ上 |
 | 管理方式 | 完全にGoogleが管理 | Kubernetesクラスタ内で管理 |
-| スケーリング | リクエストベースで自動スケール	Kubernetesのオートスケーリング機能を利用 |
+| スケーリング | リクエストベースで自動スケール | Kubernetesのオートスケーリング機能を利用 |
 | ネットワーク | VPCアクセス可能（Serverless VPC Access）| Kubernetesのネットワーク機能を利用 |
 | カスタマイズ性 | 限られた設定変更のみ可能| Kubernetesの柔軟な設定が可能 |
 | GPU・カスタムマシンタイプ | 利用不可| Anthos GKEの機能を活用可能 |

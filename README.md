@@ -14,7 +14,7 @@ Cloud Run for Anthos と Cloud Run (fully managed) の違いを簡単にまと�
 | GPU・カスタムマシンタイプ | 利用不可 | Anthos GKEの機能を活用可能 |
 | 用途 | シンプルなサーバーレスアプリ| Kubernetesベースの高度なアプリ |
 
-どちらを選ぶべきか？
+* どちらを選ぶべきか？<br>
 Cloud Run (fully managed) は、シンプルなサーバーレスアプリ をすぐにデプロイしたい場合に最適。<br>
 Cloud Run for Anthos は、既存のKubernetes環境を活用しながらサーバーレスの利点を得たい場合 に適している。<br>
 

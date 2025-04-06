@@ -3,7 +3,7 @@
 Cloud Run for Anthos と Cloud Run (fully managed) の違いを簡単にまとめると、Cloud Run for Anthos は Kubernetes（GKE）上で動作する のに対し、Cloud Run (fully managed) は Google Cloud による完全なサーバーレス環境 で動作する。
 
 * 主な違い
-| 特徴 |	Cloud Run (fully managed) |	Cloud Run for Anthos |
+| |	Cloud Run (fully managed) |	Cloud Run for Anthos |
 | :--- | :--- | :--- |
 | 実行環境 |	Google Cloudのサーバーレス環境 |	Anthos GKEクラスタ上 |
 | 管理方式 | 完全にGoogleが管理 | Kubernetesクラスタ内で管理 |

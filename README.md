@@ -2,7 +2,7 @@
 
 Cloud Run for Anthos と Cloud Run (fully managed) の違いを簡単にまとめると、Cloud Run for Anthos は Kubernetes（GKE）上で動作する のに対し、Cloud Run (fully managed) は Google Cloud による完全なサーバーレス環境 で動作する。<br>
 
-# * 主な違い
+# 主な違い
 
 | 特徴 |	Cloud Run (fully managed) |	Cloud Run for Anthos |
 | :--- | :--- | :--- |
@@ -16,7 +16,23 @@ Cloud Run for Anthos と Cloud Run (fully managed) の違いを簡単にまと�
 
 <br>
 
-# * どちらを選ぶべきか？<br>
-Cloud Run (fully managed) は、シンプルなサーバーレスアプリ をすぐにデプロイしたい場合に最適。<br>
-Cloud Run for Anthos は、既存のKubernetes環境を活用しながらサーバーレスの利点を得たい場合 に適している。<br>
+Cloud Run for Anthos環境にアプリをデプロイする際は、以下のようなyamlファイルを通じて、Knative Serving Service を kubectlを用いてデプロイすることになる。
+```
+apiVersion: serving.knative.dev/v1
+kind: Service
+metadata:
+  name: my-nginx
+spec:
+  template:
+    spec:
+      containers:
+      - image: nginx
+        ports:
+        - containerPort: 80
+```
+
+
+# どちらを選ぶべきか？<br>
+- Cloud Run (fully managed) は、シンプルなサーバーレスアプリ をすぐにデプロイしたい場合に最適。<br>
+- Cloud Run for Anthos は、既存のKubernetes環境を活用しながらサーバーレスの利点を得たい場合 に適している。<br>
 もし Kubernetesの管理が不要で、完全なサーバーレス環境を求めるなら Cloud Run (fully managed)、 Kubernetesの柔軟性を活かしながらサーバーレスを導入したいなら Cloud Run for Anthos が適している。

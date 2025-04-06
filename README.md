@@ -37,4 +37,4 @@ spec:
 - Cloud Run for Anthos は、既存のKubernetes環境を活用しながらサーバーレスの利点を得たい場合 に適している。<br>
 もし Kubernetesの管理が不要で、完全なサーバーレス環境を求めるなら Cloud Run (fully managed)、 Kubernetesの柔軟性を活かしながらサーバーレスを導入したいなら Cloud Run for Anthos が適している。
 
-[CloudRun_for_Anthos.png](https://storage.googleapis.com/gweb-cloudblog-publish/images/developer_and_operator.0316026505360460.max-.max-700x700.png)
+![CloudRun_for_Anthos.png](https://storage.googleapis.com/gweb-cloudblog-publish/images/developer_and_operator.0316026505360460.max-.max-700x700.png)
